@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Bayon&family=Bebas+Neue&family=Julius+Sans+One&family=Megrim&family=Paytone+One&family=Permanent+Marker&display=swap');
+
+
+body, html{
+/*deletes space on sides and top*/
+  margin: 0px;
+  padding: 0px; 
+/*  background-color: #f9f4eb;*/
+  background-color: #ffebe6;
+/*  box-sizing: border-box;*/
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.logo{
+  margin-left: 40px;
+  align-content: center;
+  cursor: pointer;
+  transition: 0.15s; 
+  height: 70%;
+  margin-top: 12px;
+}
+
+
+
+.header{
+  height: 80px;
+  width: 100%; 
+/*  background-color: white;*/
+/*  background-color: #e9d9d3;*/
+  background-color: #ffebe6;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 100;
+  padding:0;
+  margin: 0; 
+
+/*ONLY ON BOTTOM = BORDER  */
+  border-bottom: 2px solid #333;
+
+
+}
+
+.header_buttons{
+   display: flex;
+   flex-direction: row;
+/*   width: 10vw;*/
+   justify-content: center; 
+   align-items: center; 
+/*   padding-left: 10px;*/
+   margin-top: -55px;
+   padding-right: 10px;
+
+}
+
+.find_container,
+.about_container,.home_container{
+  display: flex;
+  flex-direction: row;
+/*  width: 10vw;*/
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px; 
+  margin-top: 55px;
+/*  margin-left: 20px; */
+ 
+}
+
+.button1{
+
+    font-family: futura; 
+    font-weight: 500; 
+    font-size: 16px;
+/*    color: #293241; */
+/*    color: white;*/
+    padding: 8px 16px;
+    border-radius: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+/*    border-color: #293241; */
+    border-color: black;
+    border-style:solid;
+    border-width: 1.8;
+    cursor:pointer; 
+    transition: 0.15s; 
+/*    background-color: #e9d9d3;*/
+    background-color: #ffebe6;
+   
+}
+
+.button1:hover{
+    /* background-color: #d4d3d3 ; */
+    color: #f76300;
+/* #e65349   */
+    border-color: #f489b5;
+
+    
+}
+
+/*BUTTON YOU ARE ON*/
+.button2{
+
+    font-family: futura; 
+    font-weight: 500; 
+    font-size: 16px;
+/*    color: #293241; */
+/*    color: white;*/
+    padding: 8px 16px;
+    border-radius: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+/*    border-color: #293241; */
+    border-color: #f489b5;
+    border-style:solid;
+    border-width: 1.8;
+    cursor:pointer; 
+    transition: 0.15s; 
+/*    background-color: #e9d9d3;*/
+    background-color:#ffebe6;
+   
+}
+
+
+
+/*FIND OUT WHAT IS WRONG HERE WITH LINK COLOR*/
+.link2{
+  text-decoration: none;
+  color: #f489b5; 
+  transition: 0.15;
+
+}
+
+
+
+.link{
+  text-decoration: none;
+  color: black; 
+  transition: 0.15;
+
+
+}
+
+.link:hover{
+  color: #f489b5;
+}
+
+
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+/*MAIN IMAGE/ BACKGROUND*/
+
+.main-img{
+  padding-top: -50px;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/*SUB-NAVIGATION*/
+
+#nav{
+    font-family: futura; 
+    font-size: 35px;
+    margin-top: -550px;
+    margin-left: 150px;
+
+ 
+}
+
+/*all the links inside this will have these properties*/
+#nav>a, #nav>a:visited {
+  color: #000;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  border-style: solid;
+  transition: 0.15s;
+}
+
+#nav>a:hover{
+
+    color: #f489b5;
+
+}
+
+#pageTitle{
+    padding-top: 10px;
+    font-family: futura; 
+    font-size: 35px;
+    margin-left: 150px;
+
+
+}
+
+/*GRID WITH INFO*/
+#outputGrid{
+    margin-top: -5px;
+    padding-right: 100px;
+    padding-left: 100px;
+    display: grid;
+    /* 3 MENTORS PER ROW  */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5vw;
+
+}
+
+/*The things inside each space in grid*/
+#outputGrid>a, #outputGrid>a:visited{
+/*    font-size: 22px;*/
+/*    padding-bottom: 0;*/
+    color: white;
+    font-weight: 100px;
+   
+    text-decoration: none;
+/*    border: 1px solid rgba(0,0,0,0.1);*/
+    background-color: black;
+
+/*    padding: 1.25vw; */
+
+    padding: 1.5vw;
+    padding-top: 0;
+/* transition for background here   */
+    border-radius: 15px;
+    transition: 0.25s;
+
+}
+
+
+/*HOVER FOR OUTPUT GRID - OPTIONAL*/
+#outputGrid>a:hover{
+    color:  #f489b5;
+}
+
+/*preview title tag created in js*/
+.previewTitle{
+
+    font-family: futura;
+    font-size: 25px;
+    font-weight: 300px;
+    margin-bottom: 1.25vw;
+}
+
+.thumbnail{
+   
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+
+
+
+}
+
+
+/*adding class - myImage*/
+.myImage{
+
+  width: 39%;
+  height: 50%;
+  object-fit: cover;
+  margin-bottom: 2.5vw;
+  border-radius: 30px;
+  display: flex;
+  margin-top: 0px;
+  margin-left: 140px;
+
+
+/*  padding-left: 150px;*/
+  
+
+}
+
+.burning-qs{
+    margin-left: 780px;
+    font-family: futura;
+    font-size: 25px;
+    font-weight: 100;
+    margin-top: -360px;
+    padding-right: 200px;
+    padding-top: 30px;
+
+}
+
+.education{
+    margin-left: 780px;
+    font-family: futura;
+    font-size: 25px;
+    font-weight: 100;
+    margin-top: 0px;
+    padding-right: 200px;
+
+}
+
+.specialties{
+
+     margin-left: 780px;
+    font-family: futura;
+    font-size: 25px;
+    font-weight: 100;
+    padding-right: 200px;
+  
+
+}
+
+
+.graphic{
+    margin-bottom: -200px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
